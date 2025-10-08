@@ -21,14 +21,10 @@ function App() {
       <Auto color="ezüst" type="Karoq" brand="Skoda"/>
       <Dealer name="Charles" location="center" zip={count+6}/>
       <Dealer name="Andrew" location="downtown" zip={count+2}/>
-      <button onClick={() => setCount(count+2)}
-        className="btn btn-primary"
-        >
+      <button onClick={() => setCount(count+2)} className="btn btn-primary">
           Zip értéke +2
       </button><br />
-      <button onClick={() => setCount(count*2)}
-        className="btn btn-primary"
-        >
+      <button onClick={() => setCount(count*2)} className="btn btn-primary">
           Zip értéke *2
       </button>
     </>
