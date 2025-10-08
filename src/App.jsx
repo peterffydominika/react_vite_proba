@@ -19,8 +19,18 @@ function App() {
       <Auto color="piros" type="Aventador" brand="Lamborghini"/>
       <Auto color="barna" type="Avensis" brand="Toyota"/>
       <Auto color="ezüst" type="Karoq" brand="Skoda"/>
-      <Dealer name="Charles" location="center" zip={6}/>
-      <Dealer name="Andrew" location="downtown" zip={2}/>
+      <Dealer name="Charles" location="center" zip={count+6}/>
+      <Dealer name="Andrew" location="downtown" zip={count+2}/>
+      <button onClick={() => setCount(count+2)}
+        className="btn btn-primary"
+        >
+          Zip értéke +2
+      </button><br />
+      <button onClick={() => setCount(count*2)}
+        className="btn btn-primary"
+        >
+          Zip értéke *2
+      </button>
     </>
   )
 }
